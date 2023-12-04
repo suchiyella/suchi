@@ -6,9 +6,10 @@ pipeline {
                 echo "Build stage"
             }
         }
-         stage('Suchi') {
+         stage('clone') {
             steps {
-                println("Suchitra")
+                println("clone")
+                git clone https://github.com/suchiyella/suchi.git
             }
         }
     }
